@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pemograman Web 2</title>
+    <title>Praktikum 2</title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/animate.css">
 </head>
