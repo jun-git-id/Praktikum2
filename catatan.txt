@@ -1,0 +1,34 @@
+1. buat terlebih dahulu database misal "praktikum2"
+2. buatkan 2 tabel berikut
+
+CREATE TABLE `barang` (
+  `id` int(11) NOT NULL ,
+  `nama_barang` varchar(255) NOT NULL,
+  `deskripsi` text NOT NULL,
+  `kategori` varchar(255) NOT NULL,
+  `harga` decimal(13,0) NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+// jadikan "id" sebagai primary key
+ALTER TABLE `barang`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `barang`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL ,
+  `email` varchar(50) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `status` enum('admin','staff') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+// jadikan "id" sebagai primary key
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
