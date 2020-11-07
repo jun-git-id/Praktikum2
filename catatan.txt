@@ -32,3 +32,8 @@ ALTER TABLE `user`
 
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+  ---------------------------
+  ekripsi Password pakai SHA1
+  ---------------------------
